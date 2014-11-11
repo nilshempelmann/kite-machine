@@ -1,0 +1,9 @@
+5-pol St   HYT271    Steck
+1. Gelb    SDA       Weiß
+2. Orange  GND	     Schwarz      
+
+3. Rot     VCC       Rot
+
+4. Braun   SCL       Blau
+
+5. Schwarz Lüfter

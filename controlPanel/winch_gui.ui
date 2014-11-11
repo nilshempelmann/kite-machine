@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>966</width>
+    <height>728</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="grid_main">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QGridLayout" name="grid_lcd">
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_ta">
+        <property name="text">
+         <string>Temperatur</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_hur">
+        <property name="text">
+         <string>relative Humidity</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLCDNumber" name="lcd_hur_3">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="8">
+       <widget class="QLCDNumber" name="lcd_vin_2">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="8">
+       <widget class="QLCDNumber" name="lcd_vin_4">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="7">
+       <widget class="QLCDNumber" name="lcd_alt_2">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_mc4">
+        <property name="text">
+         <string>Sensor Unit 4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_ps">
+        <property name="text">
+         <string>Pressure</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="QLabel" name="label_wdir">
+        <property name="text">
+         <string>Wind Direction</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="7">
+       <widget class="QLCDNumber" name="lcd_alt_1">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLCDNumber" name="lcd_ta_2">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLCDNumber" name="lcd_ta_3">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLCDNumber" name="lcd_ta_1">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>true</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="5">
+       <widget class="QLCDNumber" name="lcd_ws_3">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="5">
+       <widget class="QLCDNumber" name="lcd_ws_2">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLCDNumber" name="lcd_ta_4">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="6">
+       <widget class="QLCDNumber" name="lcd_wdir_3">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QLCDNumber" name="lcd_ws_1">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_mc2">
+        <property name="text">
+         <string>Sensor Unit 2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="7">
+       <widget class="QLCDNumber" name="lcd_alt_4">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="7">
+       <widget class="QLCDNumber" name="lcd_alt_3">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_mc3">
+        <property name="text">
+         <string>Sensor Unit 3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="7">
+       <widget class="QLabel" name="label_alt">
+        <property name="text">
+         <string>Hight</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="8">
+       <widget class="QLabel" name="label_vin">
+        <property name="text">
+         <string>Batterie</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLabel" name="label_ws">
+        <property name="text">
+         <string>Wind Speed</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="8">
+       <widget class="QLCDNumber" name="lcd_vin_1">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="4">
+       <widget class="QLCDNumber" name="lcd_ps_4">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="6">
+       <widget class="QLCDNumber" name="lcd_wdir_4">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="5">
+       <widget class="QLCDNumber" name="lcd_ws_4">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>6</number>
+        </property>
+        <property name="digitCount">
+         <number>6</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_mc1">
+        <property name="text">
+         <string>Sensor Unit 1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLCDNumber" name="lcd_hur_1">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QLCDNumber" name="lcd_ps_1">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="8">
+       <widget class="QLCDNumber" name="lcd_vin_3">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QLCDNumber" name="lcd_ps_3">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="6">
+       <widget class="QLCDNumber" name="lcd_wdir_2">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="6">
+       <widget class="QLCDNumber" name="lcd_wdir_1">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLCDNumber" name="lcd_hur_2">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="3">
+       <widget class="QLCDNumber" name="lcd_hur_4">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QLCDNumber" name="lcd_ps_2">
+        <property name="font">
+         <font>
+          <family>Century Schoolbook L</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <property name="smallDecimalPoint">
+         <bool>false</bool>
+        </property>
+        <property name="numDigits">
+         <number>5</number>
+        </property>
+        <property name="digitCount">
+         <number>5</number>
+        </property>
+        <property name="mode">
+         <enum>QLCDNumber::Dec</enum>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+        <property name="value" stdset="0">
+         <double>0.000000000000000</double>
+        </property>
+        <property name="intValue" stdset="0">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QRadioButton" name="radio_ref_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QRadioButton" name="radio_ref_2">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QRadioButton" name="radio_ref_3">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QRadioButton" name="radio_ref_1">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>ref.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="MplWidget" name="mpl" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="grid_adjust">
+      <item row="1" column="6">
+       <widget class="QPushButton" name="recordButton">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Start record</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QPushButton" name="analyseButton">
+        <property name="text">
+         <string>analyse</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLineEdit" name="filelineEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLineEdit" name="COMlineEdit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>/dev/ttyUSB0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QComboBox" name="comboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>20</height>
+         </size>
+        </property>
+        <item>
+         <property name="text">
+          <string>Temperature</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Relative Hum</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wind Speed</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Wind Direction</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="COMPort">
+        <property name="text">
+         <string>COM Port</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="File">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>File</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QPushButton" name="monitorButton">
+        <property name="text">
+         <string>update Monitor</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="6">
+       <widget class="KLed" name="kled">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="state">
+         <enum>KLed::On</enum>
+        </property>
+        <property name="shape">
+         <enum>KLed::Rectangular</enum>
+        </property>
+        <property name="color">
+         <color>
+          <red>195</red>
+          <green>195</green>
+          <blue>195</blue>
+         </color>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCheckBox" name="yaxischeckBox">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>Y Axis = Hight </string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>966</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuConfigure">
+    <property name="title">
+     <string>configure</string>
+    </property>
+    <addaction name="openCom"/>
+    <addaction name="filePath"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuConfigure"/>
+  </widget>
+  <action name="mplactionOpen">
+   <property name="text">
+    <string>file</string>
+   </property>
+  </action>
+  <action name="seperator">
+   <property name="text">
+    <string>seperate</string>
+   </property>
+  </action>
+  <action name="mplactionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionJob">
+   <property name="text">
+    <string>Job</string>
+   </property>
+  </action>
+  <action name="openCom">
+   <property name="text">
+    <string>Com Port</string>
+   </property>
+  </action>
+  <action name="filePath">
+   <property name="text">
+    <string>File</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>KLed</class>
+   <extends>QWidget</extends>
+   <header>kled.h</header>
+  </customwidget>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
